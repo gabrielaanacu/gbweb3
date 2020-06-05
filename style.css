@@ -12,11 +12,8 @@
 body {
     font-family: 'Marvel', sans-serif;
     background: #fafafa;
-}
-
-p {
     font-family: 'Marvel', sans-serif;
-    font-size: 1.1em;
+    font-size: 1.75em;
     font-weight: 300;
     line-height: 1.7em;
     color: #999;
@@ -91,7 +88,6 @@ a:focus {
 
 #sidebar ul li a {
     padding: 20px;
-    font-size: 1.1em;
     display: block;
 }
 
@@ -119,7 +115,6 @@ a[data-toggle="collapse"] {
 }
 
 ul ul a {
-    font-size: 0.9em !important;
     padding-left: 30px !important;
     background: #6d7fcc;
 }
@@ -130,7 +125,6 @@ ul.CTAs {
 
 ul.CTAs a {
     text-align: center;
-    font-size: 0.9em !important;
     display: block;
     border-radius: 20px;
     margin-bottom: 20px;
@@ -147,6 +141,19 @@ a.article:hover {
     color: #fff !important;
 }
 
+.list-unstyled>a {
+    color: white;
+}
+
+#imgSidebar {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+#imgSidebar>figcaption {
+    margin-top: 2em;
+}
+
 
 /* ---------------------------------------------------
     CONTENT STYLE
@@ -157,6 +164,69 @@ a.article:hover {
     padding: 20px;
     min-height: 100vh;
     transition: all 0.3s;
+}
+
+#sidebarCollapse {
+    color: white;
+    background-color: var(--main-colour);
+    border-color: transparent;
+    position: absolute !important;
+    right: 15px !important;
+    top: 15px !important;
+    z-index: 999;
+    text-align: right !important;
+}
+
+#sidebarCollapse:hover {
+    color: var(--main-colour);
+    background-color: white;
+    border-color: transparent;
+}
+
+.avatar {
+    vertical-align: middle;
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+}
+
+#sidebarHeader {
+    text-align: center;
+}
+
+.item img {
+    width: 100%;
+    height: auto
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+ol.carousel-indicators {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    left: 0;
+    right: 0;
+    width: auto;
+}
+
+ol.carousel-indicators li,
+ol.carousel-indicators li.active {
+    float: left;
+    width: 33.3%;
+    height: 10px;
+    margin: 0;
+    border-radius: 0;
+    border: 0;
+    background: transparent;
+}
+
+ol.carousel-indicators li.active {
+    background: yellow;
 }
 
 
@@ -174,27 +244,4 @@ a.article:hover {
     #sidebarCollapse span {
         display: none;
     }
-}
-
-#sidebarCollapse {
-    color: white;
-    background-color: var(--main-colour);
-    border-color: transparent;
-}
-
-#sidebarCollapse:hover {
-    color: var(--main-colour);
-    background-color: transparent;
-    border-color: transparent;
-}
-
-.avatar {
-    vertical-align: middle;
-    width: 125px;
-    height: 125px;
-    border-radius: 50%;
-}
-
-#sidebarHeader {
-    text-align: center;
 }
