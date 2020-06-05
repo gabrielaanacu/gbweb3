@@ -146,7 +146,7 @@ a.article:hover {
 }
 
 #imgSidebar {
-    margin-top: 2em;
+    margin-top: 1.5em;
     margin-bottom: 2em;
 }
 
@@ -190,9 +190,10 @@ a.article:hover {
 
 .avatar {
     vertical-align: middle;
-    width: 125px;
-    height: 125px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
+    border: 10px solid var(--seecond-colour);
 }
 
 #sidebarHeader {
