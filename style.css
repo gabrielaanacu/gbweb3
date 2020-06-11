@@ -235,6 +235,14 @@ ol.carousel-indicators li.active {
     background: rgba(255, 255, 255, 0.719);
 }
 
+.fab {
+    margin-right: 0.3em;
+}
+
+.fas {
+    margin-right: 5em;
+}
+
 
 /* ---------------------------------------------------
     MEDIAQUERIES
