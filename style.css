@@ -3,6 +3,13 @@
     --seecond-colour: #ffa8a8;
 }
 
+* {
+    -webkit-box-sizing: border-box;
+    -moz-boz-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+}
+
 
 /*
     DEMO STYLE
@@ -17,6 +24,7 @@ body {
     font-weight: 300;
     line-height: 1.7em;
     color: #999;
+    margin: 0;
 }
 
 a,
@@ -245,6 +253,87 @@ ol.carousel-indicators li.active {
 
 
 /* ---------------------------------------------------
+    RESUME
+----------------------------------------------------- */
+
+h1 {
+    text-align: center;
+    font-weight: 300;
+}
+
+h1 span {
+    font-weight: 600;
+}
+
+.ResumeContainer {
+    width: 80%;
+    padding: 50px 0;
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.ResumeContainer:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -1px;
+    width: 2px;
+    height: 100%;
+    background: var(--main-colour);
+    z-index: 1;
+}
+
+.timeline-block {
+    width: 50%;
+    width: 50%;
+    width: 50%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    justify-content: space-between;
+    clear: both;
+}
+
+.timeline-block-right {
+    float: right;
+}
+
+.timeline-block-left {
+    float: left;
+    direction: rtl;
+    text-align: right;
+}
+
+.marker {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid var(--main-colour);
+    background: var(--main-colour);
+    margin-top: 10px;
+    z-index: 9999;
+}
+
+.timeline-content {
+    width: 95%;
+    padding: 0 15px;
+}
+
+.timeline-content h3 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+
+/* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
 
@@ -257,5 +346,21 @@ ol.carousel-indicators li.active {
     }
     #sidebarCollapse span {
         display: none;
+    }
+    .ResumeContainer:before {
+        left: 8px;
+        width: 2px;
+    }
+    .timeline-block {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .timeline-block-right {
+        float: none;
+    }
+    .timeline-block-left {
+        float: none;
+        direction: ltr;
+        text-align: left;
     }
 }
